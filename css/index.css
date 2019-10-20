@@ -1,0 +1,65 @@
+@charset "utf-8";
+.logo{
+	/*border: 1px solid red;*/
+	text-align: center;
+	color: #333;
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+.logo img{
+	width: 70px;
+	height: 70px;
+	margin-top: 30px;
+	border: 1px solid #eee;
+	border-radius: 15px;
+}
+.header {
+    background: #ffffff;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-weight: bold;
+    /*margin-top: 10px;*/
+}
+.header a:first-child {
+    border-left: 1px solid #eee;
+}
+.header .active {
+    color: #000;
+}
+.header a {
+    display: inline-block;
+    padding: 15px 15px;
+    color: #999;
+    font-size: 18px;
+    border-right: 1px solid #eee;
+}
+.articleTitle{
+	text-align: center;
+	margin: 2em 0;
+}
+.articleAuthorName{
+	font-size: 18px;
+	text-align: center;
+}
+.articleContent{
+	font-size: 18px;
+	padding: 2em 0.9em;
+	text-indent: 2em;
+	line-height: 25px;
+}
+.randomBox{
+	text-align: center;
+}
+.randomBox a {
+    padding: 10px 35px;
+    border: 1px solid #ddd;
+    background: rgb(253, 219, 111);
+    display: inline-block;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    color: #333;
+    min-width: 100px;
+}

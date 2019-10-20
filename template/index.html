@@ -1,0 +1,24 @@
+<div>
+	<div class="logo">
+		<img src="img/apple-icon.png" />
+		<p>每日一文</p>
+	</div>
+	<div class="header">
+		<a class="active" href="#/index">文章</a>
+		<a href="#/voice">声音</a>
+	</div>
+	<div class="container">
+		<h2 class="articleTitle">{{data.title}}</h2>
+		<div class="articleAuthorName">{{data.author}}</div>
+		<div class="articleContent" ng-bind-html="data.content | to_html"></div>
+		<div class="randomBox">
+			<a ng-click="randomTxt()">随机一篇</a>
+		</div>
+	</div>
+	<div class="header">
+		<a class="active" href="#/index">文章</a>
+		<a href="#/voice">声音</a>
+	</div>
+</div>
+<footer></footer>
+<div ui-view=""></div>

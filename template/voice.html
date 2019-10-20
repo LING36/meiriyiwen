@@ -1,0 +1,75 @@
+<div class="header">
+	<a href="#/index">文章</a>
+	<a class="active" href="#/voice">声音</a>
+</div>
+<div class="list_box">
+	<div class="voice_card" ng-repeat="item in dataList">
+		<a class="voice_img" href="#/show/{{$index}}">
+			<img src="{{item.img}}">
+		</a>
+		<div class="voice_title">
+			<a  target="_blank">{{item.title}}</a>
+		</div>
+		<div class="voice_author">
+			作者：{{item.author}}&nbsp;&nbsp;主播：{{item.zhubo}}
+		</div>
+		<span class="voice_tag">{{item.id}}期</span>
+	</div>
+	
+</div>
+<style>
+	.list_box {
+		background: #F5F5F5;
+		padding: 0 10px;
+		padding-top: 30px;
+	}
+	
+	.voice_card {
+		width: 100%;
+		border: 1px solid #dddddd;
+		margin-bottom: 30px;
+		background: #fff;
+		position: relative;
+	}
+	
+	.voice_img {
+		width: 100%;
+		background: #dddddd;
+		display: inline-block;
+	}
+	
+	a {
+		color: #000000;
+		text-decoration: none;
+	}
+	
+	.voice_img img {
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	img {
+		border: none;
+	}
+	
+	.voice_title {
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+	
+	.voice_title,
+	.voice_author {
+		padding: 0 10px;
+		line-height: 30px;
+	}
+	
+	.voice_tag {
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		background: #333;
+		color: #fff;
+		padding: 3px 6px;
+		border-radius: 4px;
+	}
+</style>

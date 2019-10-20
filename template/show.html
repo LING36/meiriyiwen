@@ -1,0 +1,59 @@
+<div class="header">
+	<a href="#/index">文章</a>
+	<a href="#/voice">声音</a>
+</div>
+<div class="show">
+	<div class="voice_show">
+		<h1 class="p_title" id="p_title">{{show.title}}</h1>
+		<p class="p_file">
+			<div class="audiojs" classname="audiojs" id="audiojs_wrapper0">
+				<audio  ng-src="{{link}}" controls="controls"></audio>
+			</div>
+		</p>
+		<p class="p_author">作者：{{show.author}}&nbsp;&nbsp;&nbsp;&nbsp;声音：{{show.zhubo}}</p>
+	</div>
+</div>
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+		background: url('img/{{show.id}}_img.jpg') repeat fixed center top #F0F8FF;
+		background-size: cover;
+		width: 100%;
+	}
+	
+	.voice_show {
+		width: 95%;
+		margin: 30px auto 40px;
+		padding-top: 1em;
+		overflow: hidden;
+		background-color: #FFFFFF;
+		background-image: -moz-linear-gradient(center top, #FFFFFF, #EEEEEE);
+		height: 250px;
+		position: relative;
+		z-index: 0;
+		border-radius: 3px;
+		box-shadow: 1px 1px 11px #999;
+	}
+	
+	.voice_show h1 {
+		text-transform: uppercase;
+		text-align: center;
+		color: #666;
+		margin: 20px 0 30px 0;
+		letter-spacing: 4px;
+		font: normal 20px/1 Verdana, Helvetica;
+		color: #000000;
+		font-weight: bold;
+	}
+	
+	.voice_show p {
+		text-align: center;
+		color: #999999;
+		margin-top: 30px;
+	}
+	
+	.audiojs {
+		text-align: center;
+	}
+</style>
