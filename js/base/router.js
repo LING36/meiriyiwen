@@ -15,6 +15,10 @@ routers.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
 		url: '/show/:vid',
 		controller: 'showCtrl',
 		templateUrl: 'template/show.html'
+	}).state('about', { 
+		url: '/about',
+		controller: 'aboutCtrl',
+		templateUrl: 'template/about.html'
 	})
 
 	//默认进入的路由页面
