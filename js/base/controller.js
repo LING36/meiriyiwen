@@ -63,3 +63,5 @@ controllers.controller('indexCtrl', ['$scope', '$http', '$window', '$location', 
 	$scope.getData();
 
 }])
+
+

@@ -17,7 +17,6 @@ routers.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
 		templateUrl: 'template/show.html'
 	}).state('about', { 
 		url: '/about',
-		controller: 'aboutCtrl',
 		templateUrl: 'template/about.html'
 	})
 
