@@ -8,15 +8,17 @@
 			<img src="{{item.img}}">
 		</a>
 		<div class="voice_title">
-			<a  target="_blank">{{item.title}}</a>
+			<a target="_blank">{{item.title}}</a>
 		</div>
 		<div class="voice_author">
 			作者：{{item.author}}&nbsp;&nbsp;主播：{{item.zhubo}}
 		</div>
 		<span class="voice_tag">{{item.id}}期</span>
 	</div>
-	
+	<footer></footer>
+	<div ui-view=""></div>
 </div>
+
 <style>
 	.list_box {
 		background: #F5F5F5;
